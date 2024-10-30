@@ -1,0 +1,12 @@
+
+*-backups/
+
+*.lck
+
+fp-info-cache
+
+*.png
+
+*.kicad_prl
+
+.DS_Store
