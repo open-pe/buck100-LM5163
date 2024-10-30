@@ -1,3 +1,5 @@
+![3D rendering](pcb3d.webp)
+
 |      |   |         |
 |------|---|---------|
 | Vin  | 6 | 100     |
@@ -33,3 +35,5 @@ requirements:
 | → TY NRS8040T101MJGK | 100uH | 1.1A      | 364        |           | $,22    | 8mm  | [pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2544/NRS8040T101MJGK_SS.pdf) |
 |                      |       |           |            |           |         |      |                                                                                                 |
 |                      |       |           |            |           |         |      |                                                                                                 |
+
+
