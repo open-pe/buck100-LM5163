@@ -1334,6 +1334,16 @@
 	)
 	(wire
 		(pts
+			(xy 135.89 59.69) (xy 146.05 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11283116-9eaa-436a-9419-30e8d320d2ec")
+	)
+	(wire
+		(pts
 			(xy 95.25 86.36) (xy 93.98 86.36)
 		)
 		(stroke
@@ -1531,16 +1541,6 @@
 			(type default)
 		)
 		(uuid "575cd33f-3e0a-49ae-b5b2-c9fe5de3f909")
-	)
-	(wire
-		(pts
-			(xy 135.89 59.69) (xy 146.05 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "58d05418-db15-46c0-aed9-875130dd48b8")
 	)
 	(wire
 		(pts
@@ -1902,6 +1902,16 @@
 		)
 		(uuid "ff924822-6f8d-4897-a9b2-f8579c6189b3")
 	)
+	(text "Rfb1\n"
+		(exclude_from_sim no)
+		(at 180.594 74.93 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "06c3e9e7-404f-4541-92b4-3dd8ef13556b")
+	)
 	(text "LM5163 100Vmax 	0.5A\nLM5164 100Vmax	1.0A\n\nLM5168 120Vmax	0.3A\nLM5169 120Vmax	0.65A"
 		(exclude_from_sim no)
 		(at 105.918 50.546 0)
@@ -1922,6 +1932,16 @@
 			(href "https://www.ti.com/tool/LM5163-LM5164DESIGN-CALC#downloads")
 		)
 		(uuid "40eeb90a-85d5-4427-a0f0-96a263584a3d")
+	)
+	(text "Rfb2\n"
+		(exclude_from_sim no)
+		(at 179.832 90.424 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "5f45f38d-6467-4c31-b848-f2c5608d772c")
 	)
 	(text "Snubber"
 		(exclude_from_sim no)
@@ -2001,22 +2021,22 @@
 	)
 	(global_label "SW"
 		(shape input)
-		(at 146.05 59.69 90)
+		(at 135.89 59.69 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "8906128d-dad9-45c3-8cc4-7b7483187583")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 146.05 54.0439 90)
+			(at 130.2439 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -3127,7 +3147,7 @@
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "9876fe3b-8f7a-49cb-96c6-86982450fc12")
