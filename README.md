@@ -1,3 +1,9 @@
+TODO
+
+- put Rfb1, Rfb2, Rt labels
+- c6 footprint?
+- order 1uf, 2.2nF, Rt
+
 ![3D rendering](pcb3d.webp)
 
 |      |   |         |
@@ -41,14 +47,15 @@
 
 https://webench.ti.com/power-designer/switching-regulator/select
 
-#                        
+#                             
 
-| Vout | Rfb1 | Rfb2 | Ra@100khz |
-|------|------|------|-----------|
-| 3.33 | 390k | 220k | 715k      |
-| 3.35 | 430k | 240k |           |
-| 11.2 | 470k | 56k  | 1.5k      |
-| 11.3 | 430k | 51k  | 1.5k      |
+| Vout |      | Rfb1 | Rfb2 | f_sw | Rt | Ra@100khz                | L     |
+|------|------|------|------|------|----|--------------------------|-------|
+| 3.33 |      | 390k | 220k |      |    | 715k                     | 400uh | 
+| 3.35 |      | 430k | 240k |      |    |                          |       |
+| 11.2 |      | 470k | 56k  |      |    | 1.5k                     |       |
+| 11.3 |      | 430k | 51k  |      |    | 1.5k                     |       |
+| 11.3 |      | 430k | 50k  |      |    | 600..1.4k   WR08X155 JTL |       |
 
 11.2V: Rfb1
 
