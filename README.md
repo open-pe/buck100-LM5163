@@ -6,6 +6,7 @@ TODO
 
 ![3D rendering](pcb3d.webp)
 
+## Specs
 |      |   |         |
 |------|---|---------|
 | Vin  | 6 | 100     |
@@ -47,8 +48,10 @@ TODO
 
 https://webench.ti.com/power-designer/switching-regulator/select
 
-#                             
+#                        
 
+## Feedback Resistor Values  
+                      
 | Vout |      | Rfb1 | Rfb2 | f_sw | Rt | Ra@100khz                | L     |
 |------|------|------|------|------|----|--------------------------|-------|
 | 3.33 |      | 390k | 220k |      |    | 715k                     | 400uh | 
@@ -57,9 +60,9 @@ https://webench.ti.com/power-designer/switching-regulator/select
 | 11.3 |      | 430k | 51k  |      |    | 1.5k                     |       |
 | 11.3 |      | 430k | 50k  |      |    | 600..1.4k   WR08X155 JTL |       |
 
-11.2V: Rfb1
 
-https://ch00ftech.com/wp-content/uploads/2012/05/resistorsandcaps.pdf
+[Common Resistor Values](https://ch00ftech.com/wp-content/uploads/2012/05/resistorsandcaps.pdf)
+
 
 ## inductors
 
