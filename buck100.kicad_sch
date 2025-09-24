@@ -1,13 +1,15 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "8e73fe05-3786-4f6a-a08f-26f1e56c63f2")
 	(paper "A4")
 	(lib_symbols
 		(symbol "Connector:Conn_01x03_Male"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -73,9 +75,42 @@
 				)
 			)
 			(symbol "Conn_01x03_Male_1_1"
+				(rectangle
+					(start 0.8636 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
 				(polyline
 					(pts
-						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+						(xy 1.27 2.54) (xy 0.8636 2.54)
 					)
 					(stroke
 						(width 0.1524)
@@ -99,7 +134,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 2.54) (xy 0.8636 2.54)
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
 					)
 					(stroke
 						(width 0.1524)
@@ -107,39 +142,6 @@
 					)
 					(fill
 						(type none)
-					)
-				)
-				(rectangle
-					(start 0.8636 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 2.667)
-					(end 0 2.413)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
 					)
 				)
 				(pin passive line
@@ -197,9 +199,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:C_Polarized"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.254)
 			)
@@ -355,11 +360,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:C_Small"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -429,10 +439,10 @@
 			(symbol "C_Small_0_1"
 				(polyline
 					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
+						(xy -1.524 0.508) (xy 1.524 0.508)
 					)
 					(stroke
-						(width 0.3302)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -441,10 +451,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
 					)
 					(stroke
-						(width 0.3048)
+						(width 0.3302)
 						(type default)
 					)
 					(fill
@@ -490,11 +500,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:L"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -561,32 +576,8 @@
 			)
 			(symbol "L_0_1"
 				(arc
-					(start 0 -2.54)
-					(mid 0.6323 -1.905)
-					(end 0 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -1.27)
-					(mid 0.6323 -0.635)
-					(end 0 0)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 0)
-					(mid 0.6323 0.635)
+					(start 0 2.54)
+					(mid 0.6323 1.905)
 					(end 0 1.27)
 					(stroke
 						(width 0)
@@ -598,8 +589,32 @@
 				)
 				(arc
 					(start 0 1.27)
-					(mid 0.6323 1.905)
-					(end 0 2.54)
+					(mid 0.6323 0.635)
+					(end 0 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid 0.6323 -0.635)
+					(end 0 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -1.27)
+					(mid 0.6323 -1.905)
+					(end 0 -2.54)
 					(stroke
 						(width 0)
 						(type default)
@@ -647,11 +662,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R_Small"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -769,6 +789,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Regulator_Switching:LM5164DDA"
 			(exclude_from_sim no)
@@ -848,24 +869,6 @@
 					)
 				)
 				(pin power_in line
-					(at -2.54 -12.7 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
 					(at -12.7 7.62 0)
 					(length 2.54)
 					(name "VIN"
@@ -919,17 +922,17 @@
 						)
 					)
 				)
-				(pin input line
-					(at 12.7 -2.54 180)
+				(pin power_in line
+					(at -2.54 -12.7 90)
 					(length 2.54)
-					(name "FB"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "5"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -937,17 +940,17 @@
 						)
 					)
 				)
-				(pin open_collector line
-					(at 12.7 -5.08 180)
+				(pin passive line
+					(at 2.54 -12.7 90)
 					(length 2.54)
-					(name "PGOOD"
+					(name "EP"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "6"
+					(number "9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -991,17 +994,35 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 2.54 -12.7 90)
+				(pin input line
+					(at 12.7 -2.54 180)
 					(length 2.54)
-					(name "EP"
+					(name "FB"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "9"
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at 12.7 -5.08 180)
+					(length 2.54)
+					(name "PGOOD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1010,6 +1031,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+3.3V"
 			(power)
@@ -1087,7 +1109,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1099,7 +1121,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1113,7 +1135,8 @@
 			(symbol "+3.3V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "+3.3V"
 						(effects
 							(font
@@ -1130,6 +1153,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
@@ -1209,7 +1233,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "GND"
 						(effects
 							(font
@@ -1226,7 +1251,59 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(text "Rfb1\n"
+		(exclude_from_sim no)
+		(at 180.594 74.93 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "06c3e9e7-404f-4541-92b4-3dd8ef13556b")
+	)
+	(text "LM5163 100Vmax 	0.5A\nLM5164 100Vmax	1.0A\n\nLM5168 120Vmax	0.3A\nLM5169 120Vmax	0.65A"
+		(exclude_from_sim no)
+		(at 105.918 50.546 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "116671ff-871c-4341-be62-8cf1a4e37545")
+	)
+	(text "TI Design Tool"
+		(exclude_from_sim no)
+		(at 152.654 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(href "https://www.ti.com/tool/LM5163-LM5164DESIGN-CALC#downloads")
+		)
+		(uuid "40eeb90a-85d5-4427-a0f0-96a263584a3d")
+	)
+	(text "Rfb2\n"
+		(exclude_from_sim no)
+		(at 179.832 90.424 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "5f45f38d-6467-4c31-b848-f2c5608d772c")
+	)
+	(text "Snubber"
+		(exclude_from_sim no)
+		(at 94.996 123.19 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "93029196-01ae-49bb-baa5-b6ff6dab45be")
 	)
 	(junction
 		(at 125.73 78.74)
@@ -1901,57 +1978,6 @@
 			(type default)
 		)
 		(uuid "ff924822-6f8d-4897-a9b2-f8579c6189b3")
-	)
-	(text "Rfb1\n"
-		(exclude_from_sim no)
-		(at 180.594 74.93 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "06c3e9e7-404f-4541-92b4-3dd8ef13556b")
-	)
-	(text "LM5163 100Vmax 	0.5A\nLM5164 100Vmax	1.0A\n\nLM5168 120Vmax	0.3A\nLM5169 120Vmax	0.65A"
-		(exclude_from_sim no)
-		(at 105.918 50.546 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "116671ff-871c-4341-be62-8cf1a4e37545")
-	)
-	(text "TI Design Tool"
-		(exclude_from_sim no)
-		(at 152.654 88.9 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(href "https://www.ti.com/tool/LM5163-LM5164DESIGN-CALC#downloads")
-		)
-		(uuid "40eeb90a-85d5-4427-a0f0-96a263584a3d")
-	)
-	(text "Rfb2\n"
-		(exclude_from_sim no)
-		(at 179.832 90.424 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "5f45f38d-6467-4c31-b848-f2c5608d772c")
-	)
-	(text "Snubber"
-		(exclude_from_sim no)
-		(at 94.996 123.19 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "93029196-01ae-49bb-baa5-b6ff6dab45be")
 	)
 	(global_label "SW"
 		(shape input)
@@ -3711,13 +3737,12 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 149.86 66.04 0)
+		(property "Description" "Ra"
+			(at 149.86 66.04 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -3810,4 +3835,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )

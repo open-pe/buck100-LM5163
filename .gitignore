@@ -12,3 +12,5 @@ fp-info-cache
 .DS_Store
 
 .idea/
+
+*.kicad_sch-bak

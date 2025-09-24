@@ -54,11 +54,11 @@ https://webench.ti.com/power-designer/switching-regulator/select
                       
 | Vout |      | Rfb1 | Rfb2 | f_sw | Rt | Ra@100khz                | L     |
 |------|------|------|------|------|----|--------------------------|-------|
-| 3.33 |      | 390k | 220k |      |    | 715k                     | 400uh | 
-| 3.35 |      | 430k | 240k |      |    |                          |       |
-| 11.2 |      | 470k | 56k  |      |    | 1.5k                     |       |
-| 11.3 |      | 430k | 51k  |      |    | 1.5k                     |       |
-| 11.3 |      | 430k | 50k  |      |    | 600..1.4k   WR08X155 JTL |       |
+| 3.33 |      | 390k | 220k |      | 100k (104)  | 470k..715k               | 470uh | 
+| 3.35 |      | 430k | 240k |      |    |                          | 470uH |
+| 11.2 |      | 470k | 56k  |      | 390 kΩ (394)  | 1.5M    (155)                 | 1.6mH      |
+| 11.3 |      | 430k | 51k  |      |    | 1.5M                     |       |
+| 11.3 |      | 430k | 50k  |      |    | 600k..1.4M   WR08X155 JTL |       |
 
 
 [Common Resistor Values](https://ch00ftech.com/wp-content/uploads/2012/05/resistorsandcaps.pdf)
@@ -85,3 +85,13 @@ requirements:
 
 * https://github.com/90wishpack/LM5164
 * https://github.com/FarwayDot/Adapter_PowerSupply_Vigi
+
+
+# Tests
+
+3.3V version:
+Vin=15
+no load: voltage can oscillate arround 3.3V
+750Ω load: voltage stable
+short circuit: 50mA Iin
+
