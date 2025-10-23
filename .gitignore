@@ -14,3 +14,5 @@ fp-info-cache
 .idea/
 
 *.kicad_sch-bak
+
+bom/ibom.html
