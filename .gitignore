@@ -16,3 +16,5 @@ fp-info-cache
 *.kicad_sch-bak
 
 bom/ibom.html
+
+_autosave-buck100.kicad_pcb
