@@ -24,6 +24,27 @@ Use the table to find values for Rfb1, Rfb2, Rt, Ra and inductivity for given V_
 * [Common Resistor Values](https://ch00ftech.com/wp-content/uploads/2012/05/resistorsandcaps.pdf)
 * LM218x Excel Tool: [Quickstart Calculator](https://www.ti.com/tool/LM5163-LM5164DESIGN-CALC)
 
+## Assembly diagrams
+
+Footprints with the value to place on each, one diagram per variant. Orange boxes differ between
+variants, blue boxes are the same on both. L1 and C2 sit on the bottom side; the right half of each diagram
+shows that side seen from below. "1" marks pin 1 of U2 and J1, "+" marks the plus pad of the C2 elko.
+J1 pinout: 1 = Vout, 2 = GND, 3 = Vin.
+
+The variant values come from the table above (first row of each voltage). The schematic still carries
+33k/10k for R1/R2 (Vout ≈ 5.2 V) and 100uH for L1, so do not build from the schematic BOM or the iBOM.
+
+### 3.3 V
+
+![buck100 3.3 V assembly](assembly/buck100-3v3.svg)
+
+### 11 V
+
+![buck100 11 V assembly](assembly/buck100-11v.svg)
+
+Regenerate after a layout or value change with KiCad's Python:
+`/Applications/KiCad/KiCad.app/Contents/Frameworks/Python.framework/Versions/Current/bin/python3 assembly/gen_assembly_diagram.py`
+
 ## LM516x features
 
 * [LM5163](https://www.ti.com/lit/ds/symlink/lm5163.pdf) (.5A) LM5164](https://www.ti.com/lit/ds/symlink/lm5164.pdf) (
